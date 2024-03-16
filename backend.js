@@ -1,35 +1,40 @@
 const express = require('express');
 const app = express();
 
-app.get('/search', function(req, res) {
-  const query = req.query.q;
-  if (!query) {
-    return res.status(400).send('Please provide a search query.');
+app.get('/search', (req, res) => {
+  const { q, accept } = req.query;
+
+  // Check if the Accept header is present and supported
+  const supportedMediaTypes = ['application/json', 'application/xml'];
+  if (accept && !supportedMediaTypes.includes(accept)) {
+    // If the media type is not supported, return a 406 error
+    return res.status(406).send('The requested media type is not supported.');
   }
 
-  // Search for packages or records related to the query
+  // Check if the search query is present
+  if (!q) {
+    // If the search query is not present, return a 412 error
+    return alert('The search query is missing.');
+  }
+
+  // Process the search query and return the results
+  const results = ['Mumbai','Kashmir','Delhi','Ujjain','Manali'];
   // ...
 
-  // Return the search results
-  res.json({
-    results: [
-      {
-        id: 1,
-        name: 'Package 1',
-        description: 'Description of Package 1',
-        price: 1000,
-      },
-      {
-        id: 2,
-        name: 'Package 2',
-        description: 'Description of Package 2',
-        price: 2000,
-      },
-      // ...
-    ],
-  });
+  // Check if there are any results
+  if (results.length) {
+    // If there are results, return a 200 OK response
+    if (accept === 'application/json') {
+      return res.json({ results });
+    } else {
+      return res.status(200).send(`<results>${results.map(r => `<result>${r}</result>`).join('')}</results>`);
+    }
+  } else {
+    // If there are no results, return a 404 error
+    return res.status(404).send('No results found.');
+  }
 });
 
-app.listen(3000, function() {
-  console.log('Server listening on port 3000.');
+app.listen(3000, () => {
+  console.log('Server listening on port http://localhost:3000.');
 });
