@@ -164,14 +164,14 @@
 /*** Hero Header ***/
 .hero-header {
     height: 43.4rem;
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url('/img/bg-hero.jpg');
+    background: linear-gradient(rgba(16, 16, 19, 0.7), rgba(39, 48, 42, 0.51)), url(../img/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 

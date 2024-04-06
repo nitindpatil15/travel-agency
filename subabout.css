@@ -1,7 +1,24 @@
-*{
+c:\$Recycle.Bin\S-1-5-21-3600183281-3745613472-1819943930-1001\$RA29R87.html*{
     margin: 0px;
     padding: 0px;
 }
 .sub-child-class{
 font-size: 2rem;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-about{
+    border: 2px solid rgb(16, 15, 15);
+    width: 35rem;
+    height: 17rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 5rem;
 }

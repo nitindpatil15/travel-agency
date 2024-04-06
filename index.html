@@ -72,21 +72,6 @@
             <a href="#container-xxl" class="nav-item nav-link">About</a>
             <a href="#services" class="nav-item nav-link">Services</a>
             <a href="#packages" class="nav-item nav-link">Packages</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu m-0">
-                <a href="destination.html" class="dropdown-item">Destination</a>
-                <a href="booking.html" class="dropdown-item">Booking</a>
-                <a href="team.html" class="dropdown-item">Travel Guides</a>
-                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                <a href="404.html" class="dropdown-item">404 Page</a>
-              </div>
-            </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
           <a href="register.html" class="btn btn-primary rounded-pill py-2 px-4"
@@ -95,7 +80,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+      <div class="container-fluid py-5 mb-5 hero-header">
         <div class="container py-5">
           <div class="row justify-content-center py-5">
             <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
@@ -105,24 +90,6 @@
               <p class="fs-4 text-white mb-4 animated slideInDown">
                 Journey with Purpose: Transformative Travel Experiences
               </p>
-              <div class="position-relative w-75 mx-auto animated slideInDown">
-                <input
-                  class="form-control search_bar border-0 rounded-pill w-100 py-3 ps-4 pe-5"
-                  id="search-input"
-                  type="text"
-                  data-search
-                  placeholder="Eg: Mumbai"
-                />
-                <button
-                  type="button"
-                  id="search-button"
-                  class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                  style="margin-top: 7px"
-                >
-                  Search
-                </button>
-              </div>
-              <div id="search-results"></div>
             </div>
           </div>
         </div>
@@ -148,15 +115,26 @@
               />
             </div>
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-            <h6 class="section-title bg-white text-start text-primary pe-3">
-              About Us
-            </h6>
-            <h1 class="mb-4">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <h6 class="section-title bg-white text-center text-primary px-2">
+                About
+              </h6>
+            </div>
+
+            <h1 class="mb-1">
               Welcome to <span class="text-primary">Tourist</span>
             </h1>
-            <h3 ><span class="text-primary">Discover the World with Tourist:</span> Your One-Stop Travel Solution!</h3>
-            <p>At Tourist, we're passionate about travel and dedicated to providing you with an unforgettable experience. Our mission is to make your travel dreams come true, no matter where in the world you want to go.</p>
+            <h3>
+              <span class="text-primary">Discover the World with Tourist:</span>
+              Your One-Stop Travel Solution!
+            </h3>
+            <p>
+              At Tourist, we're passionate about travel and dedicated to
+              providing you with an unforgettable experience. Our mission is to
+              make your travel dreams come true, no matter where in the world
+              you want to go.
+            </p>
             <div class="row gy-2 gx-4 mb-4">
               <div class="col-sm-6">
                 <p class="mb-0">
@@ -353,7 +331,7 @@
                   <div
                     class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
                   >
-                  Varanasi
+                    Varanasi
                   </div>
                 </a>
               </div>
@@ -368,7 +346,7 @@
                   <div
                     class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
                   >
-                  Chennai
+                    Chennai
                   </div>
                 </a>
               </div>
@@ -404,159 +382,174 @@
     <!-- Destination Start -->
 
     <!-- Package Start -->
-    <div class="container-xxl py-5" id="packages">
+    <div class="container-xxl py-4" id="packages">
       <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center text-primary px-3">
-            Packages
-          </h6>
-          <h1 class="mb-5">Awesome Packages</h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="package-item">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/package-1.jpg" alt="" />
-              </div>
-              <div class="d-flex border-bottom">
-                <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
-                  >Kashmir</small
-                >
-                <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-calendar-alt text-primary me-2"></i>3
-                  days</small
-                >
-                <small class="flex-fill text-center py-2"
-                  ><i class="fa fa-user text-primary me-2"></i>2 Person</small
-                >
-              </div>
-              <div class="text-center p-4">
-                <h3 class="mb-0">RS. 14,900</h3>
-                <div class="mb-3">
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
+        <div class="row g-5">
+          <div class="text-center wow fadeInUp mx-4" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">
+              Packages
+            </h6>
+            <h1 class="mb-5">Awesome Packages</h1>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="package-item">
+                <div class="overflow-hidden">
+                  <img class="img-fluid" src="img/package-1.jpg" alt="" />
                 </div>
-                <p>
-                  Experience the enchanting beauty of Kashmir, where every moment is a postcard-worthy scene.
-                </p>
-                <div class="d-flex justify-content-center mb-2">
-                  <a
-                    href="#"
-                    class="btn btn-sm btn-primary px-3 border-end"
-                    style="border-radius: 30px 0 0 30px"
-                    >Read More</a
+                <div class="d-flex border-bottom">
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                    >Kashmir</small
                   >
-                  <a
-                    href="#book"
-                    class="btn btn-sm btn-primary px-3"
-                    style="border-radius: 0 30px 30px 0"
-                    >Book Now</a
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                    days</small
                   >
+                  <small class="flex-fill text-center py-2"
+                    ><i class="fa fa-user text-primary me-2"></i>2 Person</small
+                  >
+                </div>
+                <div class="text-center p-4">
+                  <h3 class="mb-0">RS. 14,900</h3>
+                  <div class="mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <p>
+                    Experience the enchanting beauty of Kashmir, where every
+                    moment is a postcard-worthy scene.
+                  </p>
+                  <div class="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-primary px-3 border-end"
+                      style="border-radius: 30px 0 0 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href="#book"
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Book Now</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="package-item">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/package-2.jpg" alt="" />
-              </div>
-              <div class="d-flex border-bottom">
-                <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
-                  >Goa</small
-                >
-                <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-calendar-alt text-primary me-2"></i>3
-                  days</small
-                >
-                <small class="flex-fill text-center py-2"
-                  ><i class="fa fa-user text-primary me-2"></i>2 Person</small
-                >
-                
-              </div>
-              <div class="text-center p-4">
-                <h3 class="mb-0">RS. 13,900</h3>
-                <div class="mb-3">
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="package-item">
+                <div class="overflow-hidden">
+                  <img class="img-fluid" src="img/package-2.jpg" alt="" />
                 </div>
-                <p>
-                  In Goa, the sun, the sand, and the sea come together in perfect harmony.
-                </p>
-                <div class="d-flex justify-content-center mb-2">
-                  <a
-                    href="#"
-                    class="btn btn-sm btn-primary px-3 border-end"
-                    style="border-radius: 30px 0 0 30px"
-                    id="book"
-                    >Read More</a
+                <div class="d-flex border-bottom">
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                    >Goa</small
                   >
-                  <a
-                    href="#book"
-                    class="btn btn-sm btn-primary px-3"
-                    style="border-radius: 0 30px 30px 0"
-                    >Book Now</a
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                    days</small
                   >
+                  <small class="flex-fill text-center py-2"
+                    ><i class="fa fa-user text-primary me-2"></i>2 Person</small
+                  >
+                </div>
+                <div class="text-center p-4">
+                  <h3 class="mb-0">RS. 13,900</h3>
+                  <div class="mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <p>
+                    In Goa, the sun, the sand, and the sea come together in
+                    perfect harmony.
+                  </p>
+                  <div class="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-primary px-3 border-end"
+                      style="border-radius: 30px 0 0 30px"
+                      id="book"
+                      >Read More</a
+                    >
+                    <a
+                      href="#book"
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Book Now</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="package-item">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/package-3.jpg" alt="" />
-              </div>
-              <div class="d-flex border-bottom">
-                <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
-                  >Ujjan</small
-                >
-                <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-calendar-alt text-primary me-2"></i>3
-                  days</small
-                >
-                <small class="flex-fill text-center py-2"
-                  ><i class="fa fa-user text-primary me-2"></i>2 Person</small
-                >
-              </div>
-              <div class="text-center p-4">
-                <h3 class="mb-0">Rs. 15,000</h3>
-                <div class="mb-3">
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
-                  <small class="fa fa-star text-primary"></small>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="package-item">
+                <div class="overflow-hidden">
+                  <img class="img-fluid" src="img/package-3.jpg" alt="" />
                 </div>
-                <p>Ujjain, a city that embodies the essence of spirituality and culture.</p>
-                <div class="d-flex justify-content-center mb-2">
-                  <a
-                    href="#"
-                    class="btn btn-sm btn-primary px-3 border-end"
-                    style="border-radius: 30px 0 0 30px"
-                    >Read More</a
+                <div class="d-flex border-bottom">
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                    >Ujjan</small
                   >
-                  <a
-                    href="#book"
-                    class="btn btn-sm btn-primary px-3"
-                    style="border-radius: 0 30px 30px 0"
-                    >Book Now</a
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                    days</small
                   >
+                  <small class="flex-fill text-center py-2"
+                    ><i class="fa fa-user text-primary me-2"></i>2 Person</small
+                  >
+                </div>
+                <div class="text-center p-4">
+                  <h3 class="mb-0">Rs. 15,000</h3>
+                  <div class="mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <p>
+                    Ujjain, a city that embodies the essence of spirituality and
+                    culture.
+                  </p>
+                  <div class="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-primary px-3 border-end"
+                      style="border-radius: 30px 0 0 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href="#book"
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Book Now</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="text-center my-5">
+        <a
+          class="btn btn-primary py-3 px-5 mt-2 wow fadeInUp rounded-pill"
+          data-wow-duration="2s"
+          href="card.html"
+          >More Packages</a
+        >
+      </div>
     </div>
+
     <!-- Package End -->
 
     <!-- Booking Start -->
@@ -690,8 +683,10 @@
               <hr class="w-25 mx-auto bg-primary mb-1" />
               <hr class="w-50 mx-auto bg-primary mt-0" />
               <p class="mb-0">
-                Unleash your wanderlust and pick your next adventure. The world is waiting!</p>
-                <br>
+                Unleash your wanderlust and pick your next adventure. The world
+                is waiting!
+              </p>
+              <br />
             </div>
           </div>
           <div
@@ -709,7 +704,9 @@
               <hr class="w-25 mx-auto bg-primary mb-1" />
               <hr class="w-50 mx-auto bg-primary mt-0" />
               <p class="mb-0">
-                Secure and convenient payments, so you can focus on the excitement of your upcoming journey.</p>
+                Secure and convenient payments, so you can focus on the
+                excitement of your upcoming journey.
+              </p>
             </div>
           </div>
           <div
@@ -727,7 +724,8 @@
               <hr class="w-25 mx-auto bg-primary mb-1" />
               <hr class="w-50 mx-auto bg-primary mt-0" />
               <p class="mb-0">
-                No need to wait! With our swift booking process, you can be on your way to new experiences in no time.
+                No need to wait! With our swift booking process, you can be on
+                your way to new experiences in no time.
               </p>
             </div>
           </div>
@@ -774,7 +772,7 @@
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="team-item">
               <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-2.jpg" alt="" />
+                <img class="img-fluid" src="img/team-4.jpg" alt="" />
               </div>
               <div
                 class="position-relative d-flex justify-content-center"
@@ -867,12 +865,10 @@
               src="img/testimonial-1.jpg"
               style="width: 80px; height: 80px"
             />
-            <h5 class="mb-0">John Doe</h5>
-            <p>New York, USA</p>
+            <h5 class="mb-0">Vijay Devarakonda</h5>
+            <p>Bangluru, India</p>
             <p class="mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
+              "Absolutely amazing experience with [Travel Agency Name]! From start to finish, they went above and beyond to ensure our trip was seamless and unforgettable. Their attention to detail and personalized service truly set them apart. Can't wait to book with them again! ~VD</p>
           </div>
           <div class="testimonial-item bg-white text-center border p-4">
             <img
@@ -880,12 +876,10 @@
               src="img/testimonial-2.jpg"
               style="width: 80px; height: 80px"
             />
-            <h5 class="mb-0">John Doe</h5>
-            <p>New York, USA</p>
+            <h5 class="mb-0">Tejas B</h5>
+            <p>Mumbai, India</p>
             <p class="mt-2 mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
+              Highly recommend [Travel Agency Name] for anyone planning a trip! They took the time to understand our preferences and curated the perfect itinerary for us. Every aspect of our journey was well-organized and exceeded our expectations. Thank you for an incredible adventure! ~Tejas.B</p>
           </div>
           <div class="testimonial-item bg-white text-center border p-4">
             <img
@@ -893,12 +887,10 @@
               src="img/testimonial-3.jpg"
               style="width: 80px; height: 80px"
             />
-            <h5 class="mb-0">John Doe</h5>
-            <p>New York, USA</p>
+            <h5 class="mb-0">Gaurav.P</h5>
+            <p>MP, India</p>
             <p class="mt-2 mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
+              Exceptional service from [Travel Agency Name]! Their team was incredibly knowledgeable, responsive, and accommodating throughout the entire booking process. They made traveling stress-free and enjoyable, and we couldn't be happier with the experience. Looking forward to many more trips with them! ~Gaurav.P</p>
           </div>
           <div class="testimonial-item bg-white text-center border p-4">
             <img
@@ -906,12 +898,10 @@
               src="img/testimonial-4.jpg"
               style="width: 80px; height: 80px"
             />
-            <h5 class="mb-0">John Doe</h5>
-            <p>New York, USA</p>
+            <h5 class="mb-0">Alice Perry</h5>
+            <p>Melbourne, Australia</p>
             <p class="mt-2 mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-              amet diam et eos. Clita erat ipsum et lorem et sit.
-            </p>
+              A huge thank you to [Travel Agency Name] for making our vacation unforgettable! Their expertise and insider recommendations made all the difference in creating a truly memorable experience. We felt well taken care of every step of the way and can't wait to book our next adventure with them! ~Alice Perry</p>
           </div>
         </div>
       </div>
@@ -927,8 +917,8 @@
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
             <h4 class="text-white mb-3">Company</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
             <a class="btn btn-link" href="">Privacy Policy</a>
             <a class="btn btn-link" href="">Terms & Condition</a>
             <a class="btn btn-link" href="">FAQs & Help</a>
@@ -945,16 +935,24 @@
               <i class="fa fa-envelope me-3"></i>info@example.com
             </p>
             <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://twitter.com"
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.youtube.com/"
                 ><i class="fab fa-youtube"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.linkedin.com/"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
@@ -966,42 +964,42 @@
                 <img
                   class="img-fluid bg-light p-1"
                   src="img/package-1.jpg"
-                  alt=""
+                  alt="PK-1"
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
                   src="img/package-2.jpg"
-                  alt=""
+                  alt="PK-2"
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
                   src="img/package-3.jpg"
-                  alt=""
+                  alt="Pk-3"
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
                   src="img/package-2.jpg"
-                  alt=""
+                  alt="PK-4"
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
                   src="img/package-3.jpg"
-                  alt=""
+                  alt="PK-5"
                 />
               </div>
               <div class="col-4">
                 <img
                   class="img-fluid bg-light p-1"
                   src="img/package-1.jpg"
-                  alt=""
+                  alt="PK-6"
                 />
               </div>
             </div>
@@ -1029,16 +1027,16 @@
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
+              &copy; <a class="border-bottom" href="#">MakeTrip</a>, All
               Right Reserved. Designed By
-              <a class="border-bottom" href="#">Coding Home</a>
+              <a class="border-bottom" href="#">GCOE Coders</a>
             </div>
             <div class="col-md-6 text-center text-md-end">
-              <div class="footer-menu">
-                <a href="">Home</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
+                <div class="footer-menu">
+                <a href="/index.html">Home</a>
+                <a href="#">Cookies</a>
+                <a href="contact.html">Help</a>
+                <a href="contact.html">FQAs</a>
               </div>
             </div>
           </div>
