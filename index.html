@@ -72,7 +72,9 @@
             <a href="#container-xxl" class="nav-item nav-link">About</a>
             <a href="#services" class="nav-item nav-link">Services</a>
             <a href="#packages" class="nav-item nav-link">Packages</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <button type="submit" class="btn btn-link mx-2 text-light" style="font-size: 1.3rem; margin-right: 2rem;" onclick="openpopup()">
+              Contact
+            </button>
           </div>
           <a href="register.html" class="btn btn-primary rounded-pill py-2 px-4"
             >Register</a
@@ -868,7 +870,12 @@
             <h5 class="mb-0">Vijay Devarakonda</h5>
             <p>Bangluru, India</p>
             <p class="mb-0">
-              "Absolutely amazing experience with [Travel Agency Name]! From start to finish, they went above and beyond to ensure our trip was seamless and unforgettable. Their attention to detail and personalized service truly set them apart. Can't wait to book with them again! ~VD</p>
+              "Absolutely amazing experience with [Travel Agency Name]! From
+              start to finish, they went above and beyond to ensure our trip was
+              seamless and unforgettable. Their attention to detail and
+              personalized service truly set them apart. Can't wait to book with
+              them again! ~VD
+            </p>
           </div>
           <div class="testimonial-item bg-white text-center border p-4">
             <img
@@ -879,7 +886,12 @@
             <h5 class="mb-0">Tejas B</h5>
             <p>Mumbai, India</p>
             <p class="mt-2 mb-0">
-              Highly recommend [Travel Agency Name] for anyone planning a trip! They took the time to understand our preferences and curated the perfect itinerary for us. Every aspect of our journey was well-organized and exceeded our expectations. Thank you for an incredible adventure! ~Tejas.B</p>
+              Highly recommend [Travel Agency Name] for anyone planning a trip!
+              They took the time to understand our preferences and curated the
+              perfect itinerary for us. Every aspect of our journey was
+              well-organized and exceeded our expectations. Thank you for an
+              incredible adventure! ~Tejas.B
+            </p>
           </div>
           <div class="testimonial-item bg-white text-center border p-4">
             <img
@@ -890,7 +902,12 @@
             <h5 class="mb-0">Gaurav.P</h5>
             <p>MP, India</p>
             <p class="mt-2 mb-0">
-              Exceptional service from [Travel Agency Name]! Their team was incredibly knowledgeable, responsive, and accommodating throughout the entire booking process. They made traveling stress-free and enjoyable, and we couldn't be happier with the experience. Looking forward to many more trips with them! ~Gaurav.P</p>
+              Exceptional service from [Travel Agency Name]! Their team was
+              incredibly knowledgeable, responsive, and accommodating throughout
+              the entire booking process. They made traveling stress-free and
+              enjoyable, and we couldn't be happier with the experience. Looking
+              forward to many more trips with them! ~Gaurav.P
+            </p>
           </div>
           <div class="testimonial-item bg-white text-center border p-4">
             <img
@@ -901,7 +918,12 @@
             <h5 class="mb-0">Alice Perry</h5>
             <p>Melbourne, Australia</p>
             <p class="mt-2 mb-0">
-              A huge thank you to [Travel Agency Name] for making our vacation unforgettable! Their expertise and insider recommendations made all the difference in creating a truly memorable experience. We felt well taken care of every step of the way and can't wait to book our next adventure with them! ~Alice Perry</p>
+              A huge thank you to [Travel Agency Name] for making our vacation
+              unforgettable! Their expertise and insider recommendations made
+              all the difference in creating a truly memorable experience. We
+              felt well taken care of every step of the way and can't wait to
+              book our next adventure with them! ~Alice Perry
+            </p>
           </div>
         </div>
       </div>
@@ -1027,12 +1049,12 @@
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">MakeTrip</a>, All
-              Right Reserved. Designed By
+              &copy; <a class="border-bottom" href="#">MakeTrip</a>, All Right
+              Reserved. Designed By
               <a class="border-bottom" href="#">GCOE Coders</a>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <div class="footer-menu">
+              <div class="footer-menu">
                 <a href="/index.html">Home</a>
                 <a href="#">Cookies</a>
                 <a href="contact.html">Help</a>
@@ -1044,6 +1066,50 @@
       </div>
     </div>
     <!-- Footer End -->
+
+    <!-- PopUp  -->
+    <div class="container">
+      <div class="popup" id="popup">
+        
+        <h1 class=" mt-5 text-center text-primary">Contact</h1>
+        <section class="contact-form">
+          <div class="form-container">
+            <button
+          type="button"
+          style="font-size: 2rem;"
+          class="mt-3 btn btn-square text-dark"
+          onclick="closepopup()"
+        >
+          X
+        </button>
+            <h2>Your Details</h2>
+            <form action="#" method="POST">
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="phone">Phone: </label>
+              <input type="tel" id="phone" name="phone" />
+
+              <label for="message">Message: </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="2"
+                required
+              ></textarea>
+
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/popup.js">
+    </script>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
